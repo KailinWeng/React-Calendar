@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(24, 37, 65);
+  color: rgb(41, 28, 39);
+
+  
+
+  
+}
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(43, 50, 71);
+}
+
+
+
+
+.add-event-popup{
+  background-color: rgb(3, 16, 32);
+  color: rgb(246, 255, 247);
+
+  max-width: 850px;
+
+  
+
+  position: fixed;
+
+  top: 70px;
+  
+  right: 20px;
+
+  
+  
+
+ 
+
+  
+}
+
+.add-event-popup > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.event-list-popup{
+  background-color: rgb(3, 16, 32);
+  color: rgb(246, 255, 247);
+
+  min-width: 350px;
+  max-width: 600px;
+
+  max-height: 650px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: fixed;
+
+  top: 70px;
+  
+  right: 20px;
+
+  overflow: auto;
+  
+  
+
+ 
+
+  
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  grid-gap: 0.7em;
+
+  margin: 7px auto;
+  
+
+  max-width: 1250px;
+  max-height: 100px;
+  
+
+  justify-items: stretch;
+
+}
+
+.calendar > *{
+  background-color: rgb(246, 255, 247);
+  padding: 0.8em;
+
+  height: 110px;
+}
+
+.date-box {
+  border-color: rgb(207, 219, 101);
+  border-width: 2px;
+  border-style: hidden;
+  border-radius: 7px;
+
+  overflow: hidden  ;
+}
+.date-box:hover {
+  transform: scale(1.23);
+  border-style: solid;
+  border-radius: 3px;
+  
+}
+
+.date-box-event{
+  font-size: smaller;
+}
+
+.empty-date-box{
+  border-width: 2px;
+  border-style: hidden;
+  border-radius: 7px;
+
+  visibility: hidden;
+}
+
+.event-listing{
+  background-color: rgb(23, 26, 39);
+  color: rgb(191, 197, 192);
+
+  margin: 14px 5px;
+
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+}
+
+.event-listing:hover{
+  cursor: pointer;
+}
+
+.event-listing > *:nth-child(2){
+  justify-self: right;
+}
+.event-listing > div > b {
+  color: rgb(246, 255, 247);
+}
+
+.event-listing-text{
+  max-width: 400px;
+  overflow: hidden;
+}
+
+
+
+.header {
+
+  
+  color: rgb(246, 255, 247);
+
+  padding: 0px 50px;
+  
+  width:auto;
+
+  margin-bottom: 15px;
+
+  display: grid;
+  grid-template-columns: 0.8fr 0.3fr 0.3fr 0.3fr 0.4fr ;
+  
+}
+
+
+
+.header > *:nth-child(1){
+  justify-self: left;
+}
+
+.header > *:nth-child(2){
+  justify-self: left;
+  
+}
+.header > *:nth-child(3){
+  justify-self: left;
+  
+}
+
+.header > *:nth-child(4){
+  justify-self: left;
+  
+}
+
+.header > *:nth-child(5){
+  justify-self: center;
+  
+}
+
+.button {
+
+  background-color: rgb(82, 33, 74);
+  color: rgb(246, 255, 247);
+
+  max-height: 50px;
+
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: capitalize;
+
+  border-style: hidden;
+  border-radius: 2px;
+
+  margin: 25px auto;
+  padding: 5px 25px;
+
+  display: block;
+
+  cursor: pointer;
+
+ 
+
+}
+
+.arrow {
+
+  background-color: rgb(82, 33, 74);
+  color: rgb(246, 255, 247);
+
+  max-height: 50px;
+
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: capitalize;
+
+  border-style: hidden;
+  border-radius: 2px;
+
+  margin: 25px 15px;
+  padding: 5px 25px;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+ 
+
+}
+
+.small-button-delete {
+
+  background-color: rgb(110, 31, 31);
+  color: rgb(246, 255, 247);
+
+  max-height: 25px;
+  
+
+  font-size: inherit;
+  font-family: inherit;
+  
+
+  border-style: hidden;
+  border-radius: 2px;
+
+  margin: 8px 5px;
+  padding: 2px 5px;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+ 
+
+}
+
+.small-button-edit {
+
+  background-color: rgb(70, 92, 141);
+  color: rgb(246, 255, 247);
+
+  max-height: 25px;
+  
+
+  font-size: inherit;
+  font-family: inherit;
+  
+
+  border-style: hidden;
+  border-radius: 2px;
+
+  margin: 8px 5px;
+  padding: 2px 5px;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+ 
+
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+
+.text-box   {
+  margin: 32px auto;
+  
+  display: block;
+  
+}
+
+.text-box   label {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 12px;
+}
+
+.text-box   input {
+  
+  height: 40px;
+  
+  padding: 3px 7px;
+  font-size: 17px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.text-box   select {
+  
+  height: 40px;
+  
+  padding: 3px 7px;
+  font-size: 17px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.popup-header{
+  text-align: center;
+
+ 
+}
+
